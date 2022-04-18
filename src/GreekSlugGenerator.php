@@ -82,6 +82,7 @@ class GreekSlugGenerator
 
         switch ($character) {
             case ' ':
+            case '.':
             case ':':
             case '-':
             case '—':
@@ -93,7 +94,7 @@ class GreekSlugGenerator
             case 'ά':
                 return 'a';
             case 'β':
-                return 'b';
+                return 'v';
             case 'γ':
                 return 'g';
             case 'δ':
@@ -105,7 +106,7 @@ class GreekSlugGenerator
                 return 'z';
             case 'η':
             case 'ή':
-                return 'h';
+                return 'i';
             case 'θ':
                 return 'th';
             case 'ι':
@@ -122,7 +123,7 @@ class GreekSlugGenerator
             case 'ν':
                 return 'n';
             case 'ξ':
-                return 'ks';
+                return 'x';
             case 'ο':
             case 'ό':
                 return 'o';
@@ -139,16 +140,16 @@ class GreekSlugGenerator
             case 'ύ':
             case 'ϋ':
             case 'ΰ':
-                return 'y';
+                return 'u';
             case 'φ':
                 return 'f';
             case 'χ':
-                return 'x';
+                return 'h';
             case 'ψ':
                 return 'ps';
             case 'ω':
             case 'ώ':
-                return 'w';
+                return 'o';
             default:
                 return '';
         }
